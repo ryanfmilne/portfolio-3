@@ -80,45 +80,46 @@ export const iconMap: Record<string, IconComponent> = {
 
 export const PROJECTS: ProjectProps[] = [
   {
-    title: 'E-commerce Platform',
-    description: 'A modern e-commerce platform built with Next.js and TypeScript, featuring advanced product management, payment processing, and admin dashboard.',
+    title: 'Business Management Platform',
+    description: 'Full-stack business management system built for commercial printing operations. Handles inventory tracking, order processing, customer management, and business analytics.',
     tags: [
       { name: 'Next.js', icon: NextJSIcon },
       { name: 'TypeScript', icon: TypeScriptIcon },
-      { name: 'React', icon: ReactIcon },
-      { name: 'Tailwind CSS', icon: TailwindCSSIcon }
-    ],
-    link: {
-      github: 'https://github.com/ryanfmilne/ecommerce-platform',
-      preview: 'https://ecommerce-demo.ryanmilne.com'
-    }
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'This portfolio website showcasing my work and skills, built with Next.js, TypeScript, and Tailwind CSS.',
-    tags: [
-      { name: 'Next.js', icon: NextJSIcon },
-      { name: 'TypeScript', icon: TypeScriptIcon },
+      { name: 'Supabase', icon: SupabaseIcon },
       { name: 'Tailwind CSS', icon: TailwindCSSIcon },
       { name: 'Vercel', icon: VercelIcon }
     ],
     link: {
-      github: 'https://github.com/ryanfmilne/portfolio',
-      preview: 'https://ryanmilne.com'
+      github: '#',
+      preview: '#'
     }
   },
   {
-    title: 'Task Management App',
-    description: 'A full-stack task management application with real-time updates, user authentication, and collaborative features.',
+    title: 'Golden West Web Design',
+    description: 'Modern web design agency site showcasing service offerings and design capabilities. Built with performance and user experience as primary focus.',
     tags: [
-      { name: 'React', icon: ReactIcon },
-      { name: 'Node.js', icon: NodeJSIcon },
-      { name: 'TypeScript', icon: TypeScriptIcon },
-      { name: 'Supabase', icon: SupabaseIcon }
+      { name: 'Astro', icon: AstroIcon },
+      { name: 'JavaScript', icon: JavaScriptIcon },
+      { name: 'HTML', icon: HTMLIcon },
+      { name: 'CSS', icon: CSSIcon }
     ],
     link: {
-      github: 'https://github.com/ryanfmilne/task-manager',
-      preview: 'https://tasks.ryanmilne.com'
+      github: '#',
+      preview: '#'
+    }
+  },
+  {
+    title: 'New Era General Construction',
+    description: 'Professional website for construction business featuring services, portfolio, and contact functionality. Emphasizes credibility and project showcasing.',
+    tags: [
+      { name: 'Astro', icon: AstroIcon },
+      { name: 'JavaScript', icon: JavaScriptIcon },
+      { name: 'HTML', icon: HTMLIcon },
+      { name: 'CSS', icon: CSSIcon }
+    ],
+    link: {
+      github: '#',
+      preview: '#'
     }
   }
 ]

@@ -26,11 +26,11 @@ export function Projects() {
           </h2>
 
           <ProjectCard projects={currentProjects} />
-          <ProjectPagination
+          {/* <ProjectPagination
             page={page}
             totalPages={totalPages}
             updatePage={updatePage}
-          />
+          /> */}
         </>
       )}
     </>

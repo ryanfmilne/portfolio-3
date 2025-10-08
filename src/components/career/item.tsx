@@ -26,7 +26,9 @@ export function CareerItem({ link, company, jobs, badges }: CareerProps) {
           </time>
           <ul className='mt-1 dark:text-neutral-400 text-neutral-600 text-pretty font-mono'>
             {job.description.map((item, index) => (
-              <li key={index}>- {item}</li>
+              <li key={index} className='relative pl-4 before:content-["-"] before:absolute before:left-0'>
+                {item}
+              </li>
             ))}
           </ul>
         </div>
