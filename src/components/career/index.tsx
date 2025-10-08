@@ -39,12 +39,12 @@ const companies: CareerProps[] = [
   },
   {
     company: 'Women\'s Fashion E-commerce Business',
-    badges: ['2011 - 2022'],
+    badges: ['Nov 2011 - Sept 2022'],
     jobs: [
       {
         title: 'Owner & Lead Developer',
-        start: '2011',
-        end: '2022',
+        start: 'Nov 2011',
+        end: 'Sept 2022',
         description: [
           'Founded and scaled online fashion retail business specializing in shoes, lingerie, accessories, and costumes',
           'Single-handedly managed all technical operations including full-stack development, design, SEO, and digital marketing',

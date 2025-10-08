@@ -4,13 +4,7 @@ import { usePathname } from 'next/navigation'
 import { Link } from 'next-view-transitions'
 import { ModeToggle } from './mode-toggle'
 import { Button } from './ui/button'
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuTrigger
-} from './ui/dropdown-menu'
 import { navItems } from '@/constants'
-import { Cog } from 'lucide-react'
 import clsx from 'clsx'
 
 export function Header() {
@@ -41,22 +35,7 @@ export function Header() {
           ))}
         </nav>
 
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button
-              aria-label="Settings"
-              variant='ghost'
-              size='icon'
-              className='relative size-9 transition-transform duration-300 group'
-            >
-              <Cog className='h-[1.5rem] w-[1.5rem] stroke-[1.5] transform group-hover:rotate-45 transition-transform duration-300' />
-              <span className='sr-only'>Settings</span>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align='end' side='bottom' className='mt-4'>
-            <ModeToggle />
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <ModeToggle />
       </div>
     </header>
   )
