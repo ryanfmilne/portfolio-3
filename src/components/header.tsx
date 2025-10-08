@@ -7,7 +7,6 @@ import { Button } from './ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuSeparator,
   DropdownMenuTrigger
 } from './ui/dropdown-menu'
 import { navItems } from '@/constants'

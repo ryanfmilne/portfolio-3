@@ -1,6 +1,5 @@
 import { GitHubIcon } from '@/components/icons/github'
 import { LinkedInIcon } from '@/components/icons/linkedin'
-import { XIcon } from '@/components/icons/x'
 import { CSSIcon } from '@/components/icons/tags/css'
 import { HTMLIcon } from '@/components/icons/tags/html'
 import { JavaScriptIcon } from '@/components/icons/tags/javascript'
@@ -23,7 +22,7 @@ import { PNPMIcon } from '@/components/icons/tags/pnpm'
 import { VercelIcon } from '@/components/icons/tags/vercel'
 import { BasehubIcon } from '@/components/icons/tags/basehub'
 import { GraphQLIcon } from '@/components/icons/tags/graphql'
-import { FileTextIcon, LinkIcon, MailIcon } from 'lucide-react'
+import { FileTextIcon, MailIcon } from 'lucide-react'
 import type { IconComponent, ProjectProps } from '@/types'
 
 export const AVATAR = {

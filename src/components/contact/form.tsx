@@ -110,7 +110,7 @@ export function ContactForm() {
       <Card className='w-full max-w-3xl'>
         <CardHeader>
           <CardDescription className='font-mono text-pretty'>
-            Fill out the form below and I'll get back to you as soon as possible.
+            Fill out the form below and I&apos;ll get back to you as soon as possible.
           </CardDescription>
         </CardHeader>
         <CardContent>

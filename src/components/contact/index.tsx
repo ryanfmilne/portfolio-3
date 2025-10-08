@@ -10,7 +10,7 @@ export function Contact() {
       </h2>
       <div className='flex flex-col gap-4'>
         <p className='font-mono mx-auto max-w-3xl mb-4 dark:text-neutral-200 text-neutral-800 text-pretty'>
-          Let's get in touch! Feel free to reach out for collaborations or just a friendly hello.
+          Let&apos;s get in touch! Feel free to reach out for collaborations or just a friendly hello.
         </p>
         <ContactForm />
       </div>

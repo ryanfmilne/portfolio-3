@@ -19,7 +19,7 @@ export default function NotFoundPage() {
           404
         </h1>
         <p className='mx-auto max-w-3xl pt-4 font-mono text-center dark:text-neutral-200 text-neutral-800 md:mb-4'>
-          Congratulations! You found a page that doesn't exist. 🎉
+          Congratulations! You found a page that doesn&apos;t exist. 🎉
         </p>
 
         <div className='flex flex-wrap items-center pt-2 md:pt-0'>
