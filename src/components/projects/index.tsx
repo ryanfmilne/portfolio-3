@@ -3,12 +3,11 @@
 import { usePagination } from '@/hook/use-pagination'
 import { Button } from '../ui/button'
 import { ProjectCard } from './card'
-import { ProjectPagination } from './pagination'
 import { TerminalIcon } from 'lucide-react'
 import { PROJECTS } from '@/data'
 
 export function Projects() {
-  const { currentProjects, page, totalPages, updatePage } = usePagination({
+  const { currentProjects, page, totalPages } = usePagination({
     projects: PROJECTS
   })
 

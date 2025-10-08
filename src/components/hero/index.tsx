@@ -63,7 +63,7 @@ export function Hero() {
       </div>
 
       <div className='flex flex-col font-mono gap-4 dark:text-neutral-200 text-neutral-800 text-pretty'>
-        <h2>Full-stack web developer with 14+ years of e-commerce and web development experience. I specialize in building scalable e-commerce platforms and modern web applications using both legacy systems (Magento) and cutting-edge technologies (Next.js, React, Astro).</h2>
+        <h2>Full-stack web developer with 14+ years of e-commerce and web development experience. I specialize in building scalable e-commerce platforms and modern web applications using both legacy systems and cutting-edge technologies.</h2>
         <h3>From founding and scaling an 11-year e-commerce business to developing custom Shopify solutions for brands, I bring a unique combination of technical expertise and business understanding. Currently focused on modern JavaScript frameworks and full-stack development.</h3>
       </div>
 
