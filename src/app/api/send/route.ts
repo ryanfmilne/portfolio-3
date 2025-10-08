@@ -20,8 +20,8 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Ryan Milne <resend@ryanmilne.com>',
-      to: 'ryan@ryanmilne.com',
+      from: 'Ryan Milne <noreply@trypaperboy.com>',
+      to: 'ryanfmilne@gmail.com',
       subject: 'Message from contact form',
       react: ContactEmailTemplate({
         firstName,
