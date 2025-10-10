@@ -47,8 +47,8 @@ export const LINKS = [
     icon: MailIcon
   },
   {
-    title: 'CV App',
-    url: 'https://cv.ryanmilne.com',
+    title: 'Download CV',
+    url: '/api/cv',
     icon: FileTextIcon
   }
 ]
