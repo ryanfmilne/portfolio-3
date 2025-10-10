@@ -107,19 +107,5 @@ export const PROJECTS: ProjectProps[] = [
       github: '#',
       preview: 'https://goldenwestwebdesign.com/'
     }
-  },
-  {
-    title: 'New Era General Construction',
-    description: 'Professional website for construction business featuring services, portfolio, and contact functionality. Emphasizes credibility and project showcasing.',
-    tags: [
-      { name: 'Astro', icon: AstroIcon },
-      { name: 'JavaScript', icon: JavaScriptIcon },
-      { name: 'HTML', icon: HTMLIcon },
-      { name: 'CSS', icon: CSSIcon }
-    ],
-    link: {
-      github: '#',
-      preview: 'https://newerageneralconstruction.com/'
-    }
   }
 ]
