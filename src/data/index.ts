@@ -43,7 +43,7 @@ export const LINKS = [
   },
   {
     title: 'Email',
-    url: 'mailto:ryan@ryanmilne.com',
+    url: 'mailto:ryanfmilne@gmail.com',
     icon: MailIcon
   },
   {
@@ -91,7 +91,7 @@ export const PROJECTS: ProjectProps[] = [
     ],
     link: {
       github: '#',
-      preview: '#'
+      preview: 'https://www.trypaperboy.com/'
     }
   },
   {
@@ -105,7 +105,7 @@ export const PROJECTS: ProjectProps[] = [
     ],
     link: {
       github: '#',
-      preview: '#'
+      preview: 'https://goldenwestwebdesign.com/'
     }
   },
   {
@@ -119,7 +119,7 @@ export const PROJECTS: ProjectProps[] = [
     ],
     link: {
       github: '#',
-      preview: '#'
+      preview: 'https://newerageneralconstruction.com/'
     }
   }
 ]

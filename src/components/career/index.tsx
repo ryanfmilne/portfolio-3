@@ -38,7 +38,7 @@ const companies: CareerProps[] = [
     ]
   },
   {
-    company: 'Women\'s Fashion E-commerce Business',
+    company: 'Fashion E-commerce Business',
     badges: ['Nov 2011 - Sept 2022'],
     jobs: [
       {
