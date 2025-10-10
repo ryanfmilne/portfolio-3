@@ -1,9 +1,9 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 import { renderToBuffer } from '@react-pdf/renderer'
 import { CVDocument } from '@/components/cv'
 import React from 'react'
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
     // Generate the PDF buffer
     const pdfBuffer = await renderToBuffer(React.createElement(CVDocument))
