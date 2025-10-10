@@ -8,8 +8,11 @@ export async function GET() {
     // Generate the PDF buffer
     const pdfBuffer = await renderToBuffer(React.createElement(CVDocument))
 
+    // Convert Buffer to Uint8Array for NextResponse
+    const uint8Array = new Uint8Array(pdfBuffer)
+
     // Create response with PDF
-    const response = new NextResponse(pdfBuffer, {
+    const response = new NextResponse(uint8Array, {
       status: 200,
       headers: {
         'Content-Type': 'application/pdf',
