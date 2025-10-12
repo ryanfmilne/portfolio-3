@@ -1,5 +1,5 @@
 import { GitHubIcon } from '@/components/icons/github'
-import { LinkedInIcon } from '@/components/icons/linkedin'
+// import { LinkedInIcon } from '@/components/icons/linkedin'
 import { CSSIcon } from '@/components/icons/tags/css'
 import { HTMLIcon } from '@/components/icons/tags/html'
 import { JavaScriptIcon } from '@/components/icons/tags/javascript'
