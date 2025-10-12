@@ -4,6 +4,24 @@ import { CareerProps } from '@/types'
 
 const companies: CareerProps[] = [
   {
+    company: 'Print Shop SaaS Platform',
+    badges: ['July 2025 - Present'],
+    jobs: [
+      {
+        title: 'Freelance Full-Stack Developer',
+        start: 'July 2025',
+        end: 'Present',
+        description: [
+          'Architected multi-tenant SaaS platform managing end-to-end business workflow from lead generation to order fulfillment for print shop operations',
+          'Built full-stack application using Next.js, React, TypeScript, and Supabase with PostgreSQL database and row-level security for tenant data isolation',
+          'Designed responsive UI with Tailwind CSS and shadcn/ui, delivering intuitive user experience across customer intake, quoting, and order management workflows',
+          'Implemented authentication system with role-based access control and real-time data synchronization',
+          'Utilized modern development practices including component-driven architecture, Git version control, and AI-assisted development tools'
+        ]
+      }
+    ]
+  },
+  {
     company: 'Catalina Home',
     badges: ['Oct 2023 - May 2025'],
     jobs: [
@@ -12,10 +30,9 @@ const companies: CareerProps[] = [
         start: 'Oct 2023',
         end: 'May 2025',
         description: [
-          'Launched two brand websites on Shopify, handling complete development lifecycle from architecture planning through deployment',
-          'Designed and prototyped user experiences in Figma, translating mockups into production-ready Shopify themes',
-          'Built custom Shopify product configurators enabling dynamic product customization and improving conversion rates',
-          'Launched two distinct brand storefronts, handling full development lifecycle from design through deployment'
+          'Launched two brand websites on Shopify, managing complete development lifecycle from architecture and design through deployment and launch',
+          'Designed user experiences in Figma and translated mockups into production-ready custom Shopify themes using Liquid templating',
+          'Built custom product configurators enabling dynamic product customization, improving conversion rates and reducing customer support inquiries'
         ]
       }
     ]
@@ -29,10 +46,9 @@ const companies: CareerProps[] = [
         start: 'Jul 2022',
         end: 'Oct 2023',
         description: [
-          'Performed technical debt cleanup on Magento 2 platform, resolving database inefficiencies and broken plugin integrations',
-          'Redesigned UI and restructured disorganized product catalog, improving site navigation and user experience',
-          'Enhanced email marketing campaigns with professional ad design, increasing engagement and customer retention',
-          'Debugged and optimized existing codebase, improving site stability and performance'
+          'Resolved critical technical debt in Magento 2 platform, optimizing database queries and fixing broken plugin integrations to improve site performance',
+          'Redesigned UI and restructured product catalog architecture, significantly improving site navigation and user experience',
+          'Designed email marketing campaigns and promotional materials, increasing customer engagement and retention'
         ]
       }
     ]
@@ -46,11 +62,10 @@ const companies: CareerProps[] = [
         start: 'Nov 2011',
         end: 'Sept 2022',
         description: [
-          'Founded and scaled online fashion retail business specializing in shoes, lingerie, accessories, and costumes',
-          'Single-handedly managed all technical operations including full-stack development, design, SEO, and digital marketing',
-          'Built and maintained custom Magento platform handling thousands of SKUs and processing orders daily',
-          'Designed responsive storefront, optimized conversion funnels, and implemented payment/shipping integrations',
-          'Grew business from launch to sustainable operation over 11 years through technical excellence and market understanding'
+          'Founded and scaled online fashion retail business specializing in shoes, lingerie, accessories, and costumes to profitable 11-year operation',
+          'Managed all technical operations including full-stack development, design, SEO, digital marketing, and customer experience',
+          'Built and maintained custom Magento platform managing 15,000+ SKUs and processing daily orders with integrated payment and shipping systems',
+          'Designed responsive storefront and optimized conversion funnels, driving consistent revenue growth'
         ]
       }
     ]

@@ -36,11 +36,11 @@ export const LINKS = [
     url: 'https://github.com/ryanfmilne',
     icon: GitHubIcon
   },
-  {
-    title: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/ryanfmilne/',
-    icon: LinkedInIcon
-  },
+  // {
+  //   title: 'LinkedIn',
+  //   url: 'https://www.linkedin.com/in/ryanfmilne/',
+  //   icon: LinkedInIcon
+  // },
   {
     title: 'Email',
     url: 'mailto:ryanfmilne@gmail.com',
@@ -76,6 +76,27 @@ export const iconMap: Record<string, IconComponent> = {
   VercelIcon,
   BasehubIcon,
   GraphQLIcon
+}
+
+export const SKILLS = {
+  languages: ['TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'SQL'],
+  frontend: ['React', 'Next.js', 'Tailwind CSS', 'Redux', 'Shadcn/ui', 'Responsive Design'],
+  backend: ['Node.js', 'Express', 'REST APIs', 'GraphQL'],
+  databases: ['PostgreSQL', 'MySQL', 'Supabase', 'MongoDB'],
+  platforms: ['Shopify', 'Magento', 'WordPress', 'Vercel', 'Netlify'],
+  tools: ['Git', 'GitHub', 'Figma', 'VS Code', 'Docker', 'Webpack', 'Vite'],
+  ecommerce: ['Payment Integration', 'Inventory Management', 'Order Processing', 'Product Catalogs'],
+  other: ['SEO', 'Digital Marketing', 'UI/UX Design', 'Agile', 'Performance Optimization']
+}
+
+export const EDUCATION = {
+  degree: 'Self-Taught Developer',
+  school: 'Continuous Learning',
+  year: '2010 - Present',
+  additional: [
+    '14+ years of professional web development experience',
+    'Specialized in e-commerce and modern JavaScript frameworks'
+  ]
 }
 
 export const PROJECTS: ProjectProps[] = [

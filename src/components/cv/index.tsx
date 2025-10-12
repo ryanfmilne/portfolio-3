@@ -1,26 +1,27 @@
 import { Document, Page, StyleSheet } from '@react-pdf/renderer'
 import { CVHeader } from './header'
-import { CVSummary } from './summary'
+import { CVSkills } from './skills'
 import { CVExperience } from './experience'
 
 const styles = StyleSheet.create({
   page: {
     fontFamily: 'Helvetica',
-    fontSize: 10,
-    paddingTop: 30,
+    fontSize: 11,
+    paddingTop: 40,
     paddingLeft: 40,
     paddingRight: 40,
-    paddingBottom: 30,
-    lineHeight: 1.4,
+    paddingBottom: 40,
+    lineHeight: 1.5,
+    backgroundColor: '#ffffff',
   },
 })
 
 export function CVDocument() {
   return (
     <Document>
-      <Page size="A4" style={styles.page}>
+      <Page size="A4" style={styles.page} wrap>
         <CVHeader />
-        <CVSummary />
+        <CVSkills />
         <CVExperience />
       </Page>
     </Document>

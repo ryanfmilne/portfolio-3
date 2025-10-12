@@ -77,3 +77,21 @@ export interface TranslationMessages {
 }
 
 export type TranslateProps = (key: string) => string
+
+export interface SkillsProps {
+  languages: string[]
+  frontend: string[]
+  backend: string[]
+  databases: string[]
+  platforms: string[]
+  tools: string[]
+  ecommerce: string[]
+  other: string[]
+}
+
+export interface EducationProps {
+  degree: string
+  school: string
+  year: string
+  additional?: string[]
+}
