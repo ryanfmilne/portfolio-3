@@ -20,7 +20,12 @@ export function Footer() {
             {avatar.name}
           </a>
           <span className='ms-2 me-2'>—</span>
-          All rights reserved.
+          <a
+            href='/api/cv2'
+            className='hover:underline hover:underline-offset-4 cursor-pointer'
+          >
+            All rights reserved.
+          </a>
         </p>
 
         <div className='flex flex-wrap items-center pt-2 md:pt-0'>
