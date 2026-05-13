@@ -10,7 +10,6 @@ import { Tooltip, TooltipTrigger, TooltipContent } from '../ui/tooltip'
 import { Badge } from '../ui/badge'
 import { Button } from '../ui/button'
 import { ArrowUpRightIcon, LinkIcon } from 'lucide-react'
-import { GitHubIcon } from '../icons/github'
 import type { ProjectProps } from '@/types'
 
 export function ProjectCard({ projects }: { projects: ProjectProps[] }) {
