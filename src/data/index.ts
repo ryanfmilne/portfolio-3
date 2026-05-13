@@ -48,7 +48,7 @@ export const LINKS = [
   },
   {
     title: 'Download CV',
-    url: '/api/cv',
+    url: '/api/cv_general',
     icon: FileTextIcon
   }
 ]
@@ -101,8 +101,8 @@ export const EDUCATION = {
 
 export const PROJECTS: ProjectProps[] = [
   {
-    title: 'Business Management Platform',
-    description: 'Full-stack business management system built for commercial printing operations. Handles inventory tracking, order processing, customer management, and business analytics.',
+    title: 'Golden West Digital',
+    description: 'Digital agency with full-featured SaaS platform. Includes client portal with analytics dashboard, QR code print integration, block-based site builder, custom domain provisioning, and Stripe billing.',
     tags: [
       { name: 'Next.js', icon: NextJSIcon },
       { name: 'TypeScript', icon: TypeScriptIcon },
@@ -112,21 +112,7 @@ export const PROJECTS: ProjectProps[] = [
     ],
     link: {
       github: '#',
-      preview: 'https://www.trypaperboy.com/'
-    }
-  },
-  {
-    title: 'Golden West Web Design',
-    description: 'Modern web design agency site showcasing service offerings and design capabilities. Built with performance and user experience as primary focus.',
-    tags: [
-      { name: 'Astro', icon: AstroIcon },
-      { name: 'JavaScript', icon: JavaScriptIcon },
-      { name: 'HTML', icon: HTMLIcon },
-      { name: 'CSS', icon: CSSIcon }
-    ],
-    link: {
-      github: '#',
-      preview: 'https://goldenwestwebdesign.com/'
+      preview: 'https://goldenwestdigital.com/'
     }
   }
 ]

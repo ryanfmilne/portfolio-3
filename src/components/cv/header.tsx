@@ -88,10 +88,7 @@ export function CVHeader() {
           <Text style={styles.name}>{avatar.name}, Full-Stack Web Developer</Text>
         </View>
         <Text style={styles.summary}>
-          Experienced Full-Stack Web Developer with 14+ years building scalable e-commerce platforms and
-          modern web applications. From founding an 11-year e-commerce business to developing custom Shopify
-          solutions, I combine deep technical expertise with business understanding. Specialized in React,
-          Next.js, TypeScript, and building exceptional user experiences.
+          Full-Stack Web Developer with 14+ years of e-commerce and web development experience. Founded and ran an 11-year e-commerce business, developed custom Shopify solutions, and recently transitioned to modern JavaScript frameworks. Currently building with React, Next.js, and TypeScript, focused on exceptional user experiences.
         </Text>
       </View>
     </View>

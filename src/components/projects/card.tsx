@@ -112,7 +112,7 @@ export function ProjectCard({ projects }: { projects: ProjectProps[] }) {
                   </a>
                 </Button>
               )}
-              {link.github && (
+{/* {link.github && (
                 <Button
                   variant='default'
                   size={null}
@@ -129,7 +129,7 @@ export function ProjectCard({ projects }: { projects: ProjectProps[] }) {
                     <p>GitHub</p>
                   </a>
                 </Button>
-              )}
+              )} */}
             </div>
           </CardContent>
         </Card>

@@ -4,19 +4,18 @@ import { CareerProps } from '@/types'
 
 const companies: CareerProps[] = [
   {
-    company: 'Print Shop SaaS Platform',
+    company: 'Golden West Digital',
     badges: ['July 2025 - Present'],
     jobs: [
       {
-        title: 'Freelance Full-Stack Developer',
+        title: 'Founder & Full-Stack Developer',
         start: 'July 2025',
         end: 'Present',
         description: [
-          'Architected multi-tenant SaaS platform managing end-to-end business workflow from lead generation to order fulfillment for print shop operations',
-          'Built full-stack application using Next.js, React, TypeScript, and Supabase with PostgreSQL database and row-level security for tenant data isolation',
-          'Designed responsive UI with Tailwind CSS and shadcn/ui, delivering intuitive user experience across customer intake, quoting, and order management workflows',
+          'Designed and built multi-tenant SaaS platform on Next.js, React, TypeScript, and Supabase with row-level security for tenant data isolation',
+          'Built block-based site builder enabling rapid templated site delivery, custom domain provisioning via Vercel API, and Stripe billing integration',
           'Implemented authentication system with role-based access control and real-time data synchronization',
-          'Utilized modern development practices including component-driven architecture, Git version control, and AI-assisted development tools'
+          'Solo developer shipping production features end-to-end with AI-assisted development workflow'
         ]
       }
     ]
@@ -30,9 +29,10 @@ const companies: CareerProps[] = [
         start: 'Oct 2023',
         end: 'May 2025',
         description: [
-          'Launched two brand websites on Shopify, managing complete development lifecycle from architecture and design through deployment and launch',
-          'Designed user experiences in Figma and translated mockups into production-ready custom Shopify themes using Liquid templating',
-          'Built custom product configurators enabling dynamic product customization, improving conversion rates and reducing customer support inquiries'
+          'Launched two production Shopify storefronts: Artistry Hardwood Flooring (artistryflooring.com) and Lone Mountain Lighting (lonemountainlighting.com), an outdoor lighting brand with a B2B Pro program for contractors',
+          'Customized Liquid themes and built product configurators for variant-heavy SKUs, improving customer conversion paths',
+          'Set up B2B/wholesale account flow on Lone Mountain with gated contractor pricing tiers',
+          'Designed user experiences in Figma and shipped responsive themes to production'
         ]
       }
     ]
@@ -46,26 +46,43 @@ const companies: CareerProps[] = [
         start: 'Jul 2022',
         end: 'Oct 2023',
         description: [
-          'Resolved critical technical debt in Magento 2 platform, optimizing database queries and fixing broken plugin integrations to improve site performance',
-          'Redesigned UI and restructured product catalog architecture, significantly improving site navigation and user experience',
-          'Designed email marketing campaigns and promotional materials, increasing customer engagement and retention'
+          'Resolved technical debt in Magento 2 platform, optimizing database queries and fixing broken plugin integrations',
+          'Redesigned UI and restructured product catalog architecture, improving navigation and discoverability',
+          'Designed email marketing campaigns and promotional materials'
         ]
       }
     ]
   },
   {
     company: 'Fashion E-commerce Business',
-    badges: ['Nov 2011 - Sept 2022'],
+    badges: ['Nov 2011 - Sep 2022'],
     jobs: [
       {
-        title: 'Owner & Lead Developer',
+        title: 'Founder & Lead Developer',
         start: 'Nov 2011',
-        end: 'Sept 2022',
+        end: 'Sep 2022',
         description: [
-          'Founded and scaled online fashion retail business specializing in shoes, lingerie, accessories, and costumes to profitable 11-year operation',
-          'Managed all technical operations including full-stack development, design, SEO, digital marketing, and customer experience',
-          'Built and maintained custom Magento platform managing 15,000+ SKUs and processing daily orders with integrated payment and shipping systems',
-          'Designed responsive storefront and optimized conversion funnels, driving consistent revenue growth'
+          'Founded and operated independent online retailer for 11 years across shoes, lingerie, accessories, and costumes',
+          'Built and maintained custom Magento platform managing 15,000+ SKUs with integrated payment, shipping, and inventory systems',
+          'Built and ran live inventory sync between Magento storefront and eBay account',
+          'Owned the full operational stack: development, design, SEO, paid advertising, photography, and customer experience'
+        ]
+      }
+    ]
+  },
+  {
+    company: 'ADL (now Luminance Lighting)',
+    badges: ['Jan 2005 - Nov 2011'],
+    jobs: [
+      {
+        title: 'Marketing: Graphic Design & Product Photography',
+        start: 'Jan 2005',
+        end: 'Nov 2011',
+        description: [
+          'Launched the company\'s first website. Early-career web development for a B2B lighting distributor',
+          'Built and maintained 5 brand product catalogs in Adobe InDesign. Early experience managing large structured product datasets',
+          'Produced product photography for catalog and trade publications',
+          'Designed print advertising; ads published in hospitality lighting trade magazines'
         ]
       }
     ]
