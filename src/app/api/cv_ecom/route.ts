@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { renderToBuffer } from '@react-pdf/renderer'
-import { CVDocument } from '@/components/cv2'
+import { CVDocument } from '@/components/cv_ecom'
 import React from 'react'
 
 export async function GET() {
@@ -16,7 +16,7 @@ export async function GET() {
       status: 200,
       headers: {
         'Content-Type': 'application/pdf',
-        'Content-Disposition': 'attachment; filename="Ryan_Milne_CV_Ecommerce.pdf"',
+        'Content-Disposition': 'attachment; filename="Ryan_Milne_Resume_Ecommerce.pdf"',
         'Content-Length': pdfBuffer.length.toString(),
       },
     })

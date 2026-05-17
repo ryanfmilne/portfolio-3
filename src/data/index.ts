@@ -48,7 +48,7 @@ export const LINKS = [
   },
   {
     title: 'Download CV',
-    url: '/api/cv_general',
+    url: '/api/cv_dev',
     icon: FileTextIcon
   }
 ]

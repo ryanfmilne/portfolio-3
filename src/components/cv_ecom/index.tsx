@@ -8,11 +8,11 @@ const styles = StyleSheet.create({
   page: {
     fontFamily: 'Helvetica',
     fontSize: 11,
-    paddingTop: 40,
-    paddingLeft: 40,
-    paddingRight: 40,
-    paddingBottom: 40,
-    lineHeight: 1.5,
+    paddingTop: 30,
+    paddingLeft: 30,
+    paddingRight: 30,
+    paddingBottom: 30,
+    lineHeight: 1.4,
     backgroundColor: '#ffffff',
   },
 })
