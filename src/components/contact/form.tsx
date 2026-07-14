@@ -71,16 +71,12 @@ export function ContactForm() {
       return
     }
 
-    const formData = new FormData()
-    Object.entries(data).forEach(([key, value]) => {
-      if (value) {
-        formData.append(key, value)
-      }
-    })
-
     try {
       const response = await fetch('/api/send', {
         method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
         body: JSON.stringify({
           firstName: data.firstName,
           lastName: data.lastName,
@@ -89,7 +85,10 @@ export function ContactForm() {
         })
       })
 
-      await response.json()
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
+
       toast({
         title: 'Success!',
         description: 'Your message has been sent successfully.',

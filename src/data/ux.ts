@@ -130,7 +130,7 @@ export const uxPageData: RolePageData = {
   cta: {
     title: 'Need a UX designer who understands how interfaces actually get built?',
     body:
-      'I am currently exploring UX, product design, e-commerce, and front-end-adjacent roles where practical design and implementation overlap.',
+      'I’m open to UX/UI, product design, e-commerce, and design-focused roles where strategy and implementation overlap.',
     primaryAction: {
       label: 'Download UX Resume',
       href: uxResumePath,

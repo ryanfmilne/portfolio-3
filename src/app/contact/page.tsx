@@ -11,7 +11,7 @@ export default function ContactPage() {
         className='relative mt-[-6rem] w-full overflow-hidden border-b border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-950'
       >
         <BackgroundPaths />
-        <div className='relative z-10 mx-auto flex w-full flex-col gap-y-6 px-4 pb-12 pt-28 md:max-w-5xl md:px-6 md:pb-16 md:pt-32'>
+        <div className='relative z-10 mx-auto flex w-full flex-col gap-y-3 px-4 pb-12 pt-28 md:max-w-5xl md:px-6 md:pb-16 md:pt-32'>
           <p className='font-mono text-sm font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400'>
             Ryan Milne
           </p>

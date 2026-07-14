@@ -126,9 +126,9 @@ export const prepressPageData: RolePageData = {
     }
   },
   cta: {
-    title: 'Need production support from someone who understands both print and web?',
+    title: 'Need a prepress professional who understands both print and digital production?',
     body:
-      'I am currently exploring prepress, production design, catalog, product-content, and digital production roles.',
+      'I’m open to prepress, graphic production, catalog production, and print-focused roles.',
     primaryAction: {
       label: 'Download Prepress Resume',
       href: prepressResumePath,

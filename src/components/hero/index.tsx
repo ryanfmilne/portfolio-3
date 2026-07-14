@@ -1,6 +1,7 @@
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
+import Image from 'next/image'
 import { data } from '@/constants'
 import clsx from 'clsx'
+import avatarImage from '../../../public/assets/avatar.webp'
 
 export function Hero({ variant = 'default' }: { variant?: 'default' | 'dark' }) {
   const { avatar } = data
@@ -9,12 +10,17 @@ export function Hero({ variant = 'default' }: { variant?: 'default' | 'dark' }) 
   return (
     <>
       <div className='flex flex-row'>
-        <Avatar className={clsx('size-28 border shadow', isDark && 'border-neutral-300 dark:border-neutral-700')}>
-          <AvatarImage alt={avatar.name} src={'/assets/avatar.webp'} />
-          <AvatarFallback className={clsx('font-mono font-bold', isDark && 'bg-neutral-100 text-neutral-950 dark:bg-neutral-900 dark:text-neutral-100')}>
-            {avatar.initials}
-          </AvatarFallback>
-        </Avatar>
+        <div className={clsx('relative size-28 shrink-0 overflow-hidden rounded-full border shadow', isDark && 'border-neutral-300 dark:border-neutral-700')}>
+          <Image
+            src={avatarImage}
+            alt={avatar.name}
+            fill
+            priority
+            placeholder='blur'
+            sizes='112px'
+            className='object-cover'
+          />
+        </div>
       </div>
 
       <div className='flex items-center flex-row gap-4'>

@@ -17,7 +17,7 @@ export function Footer() {
             rel='noopener noreferrer'
             className='hover:underline hover:underline-offset-4'
           >
-            {avatar.name}
+            Ryan F. Milne
           </a>
         </p>
 

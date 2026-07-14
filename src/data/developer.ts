@@ -214,9 +214,9 @@ export const developerPageData: RolePageData = {
     }
   },
   cta: {
-    title: 'Looking for a practical developer who understands both technology and business?',
+    title: 'Looking for a developer who understands technology and business?',
     body:
-      'I am currently exploring web development, front-end, e-commerce, Shopify, and product-focused technical roles.',
+      'I’m open to web development, front-end, e-commerce, Shopify, and product-focused roles.',
     primaryAction: {
       label: 'Download Developer Resume',
       href: developerResumePath,
