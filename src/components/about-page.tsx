@@ -8,7 +8,7 @@ export function AboutPageContent() {
     <div className='flex w-full flex-col flex-1 items-center'>
       <section
         id='about-hero'
-        className='relative mt-[-6rem] w-full overflow-hidden border-b border-neutral-800 bg-neutral-950'
+        className='relative mt-[-6rem] w-full overflow-hidden border-b border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-950'
       >
         <BackgroundPaths />
         <div className='relative z-10 mx-auto flex w-full flex-col gap-y-6 px-4 pb-12 pt-28 md:max-w-5xl md:px-6 md:pb-16 md:pt-32'>

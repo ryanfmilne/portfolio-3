@@ -73,7 +73,7 @@ export function FeaturedProjectCard({
           </div>
 
           <div className='flex flex-wrap gap-2 pt-1'>
-            <ActionLink action={project.primaryAction} />
+            <ActionLink action={project.primaryAction} icon='up-right' />
           </div>
         </div>
       </CardContent>

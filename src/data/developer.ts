@@ -9,7 +9,7 @@ export const developerPageData: RolePageData = {
     summary:
       'I build practical web applications, e-commerce experiences, and internal tools using modern JavaScript technologies.',
     description:
-      'My background combines web development, e-commerce operations, UX thinking, and hands-on business experience. I work primarily with Next.js, React, TypeScript, Shopify, Supabase, and modern front-end tooling.',
+      'My background combines web development, e-commerce operations, UX thinking, and hands-on business experience. I work primarily with Next.js, React, TypeScript, Shopify, Supabase, and modern front-end tooling to build maintainable interfaces, storefronts, and internal systems that support real business workflows.',
     primaryAction: {
       label: 'Download Developer Resume',
       href: developerResumePath,
@@ -24,7 +24,25 @@ export const developerPageData: RolePageData = {
       href: 'https://github.com/ryanfmilne',
       external: true
     },
-    technologies: ['Next.js', 'React', 'TypeScript', 'Shopify', 'Supabase', 'Tailwind CSS']
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'TypeScript',
+      'React',
+      'Next.js',
+      'Shopify Liquid',
+      'Supabase',
+      'PostgreSQL',
+      'Authentication',
+      'REST APIs',
+      'Stripe',
+      'Tailwind CSS',
+      'Git',
+      'Vercel',
+      'AI-Assisted Development',
+      'Prompt Engineering'
+    ]
   },
   featuredProjects: {
     title: 'Featured Projects',
@@ -46,7 +64,7 @@ export const developerPageData: RolePageData = {
         technologies: ['Next.js', 'React', 'TypeScript', 'Supabase'],
         mediaLabel: 'Golden West Digital product screenshot',
         primaryAction: {
-          label: 'View Case Study →',
+          label: 'View Case Study',
           href: '#golden-west-digital'
         }
       },
@@ -65,7 +83,7 @@ export const developerPageData: RolePageData = {
         technologies: ['Next.js', 'React', 'TypeScript', 'Supabase'],
         mediaLabel: 'Print management dashboard screenshot',
         primaryAction: {
-          label: 'View Case Study →',
+          label: 'View Case Study',
           href: '/dev/projects/print-management-platform'
         }
       },
@@ -84,7 +102,7 @@ export const developerPageData: RolePageData = {
         technologies: ['Next.js', 'React', 'TypeScript', 'Supabase'],
         mediaLabel: 'E-commerce storefront screenshot',
         primaryAction: {
-          label: 'View Case Study →',
+          label: 'View Case Study',
           href: '/'
         }
       }

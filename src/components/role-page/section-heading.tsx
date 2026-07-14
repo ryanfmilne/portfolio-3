@@ -9,7 +9,7 @@ export function SectionHeading({
 }) {
   return (
     <div className='flex flex-col gap-y-2'>
-      <h2 id={id} className='dark:text-neutral-100 text-neutral-800 text-3xl font-bold text-balance'>
+      <h2 id={id} className='scroll-mt-28 dark:text-neutral-100 text-neutral-800 text-3xl font-bold text-balance md:scroll-mt-32'>
         {title}
       </h2>
       {description && (

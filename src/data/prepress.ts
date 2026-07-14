@@ -16,15 +16,21 @@ export const prepressPageData: RolePageData = {
       download: true
     },
     secondaryAction: {
-      label: 'Contact Me',
-      href: '/contact'
+      label: 'View Prepress Work',
+      href: '#featured-projects'
     },
-    tertiaryAction: {
-      label: 'View GitHub',
-      href: 'https://github.com/ryanfmilne',
-      external: true
-    },
-    technologies: ['Adobe InDesign', 'Adobe Photoshop', 'Catalog Production', 'Product Data', 'Photography', 'Print Prep']
+    technologies: [
+      'Adobe InDesign',
+      'Adobe Photoshop',
+      'Adobe Illustrator',
+      'Adobe Acrobat',
+      'CorelDRAW',
+      'RIP Workflows',
+      'Preflight',
+      'Color Management',
+      'Color Calibration',
+      'Imposition'
+    ]
   },
   featuredProjects: {
     title: 'Featured Projects',
@@ -46,7 +52,7 @@ export const prepressPageData: RolePageData = {
         technologies: ['InDesign', 'Photoshop', 'Product Data', 'Print Prep'],
         mediaLabel: 'Product catalog production screenshot',
         primaryAction: {
-          label: 'View Case Study →',
+          label: 'View Case Study',
           href: '#product-catalog-production'
         }
       },
@@ -65,7 +71,7 @@ export const prepressPageData: RolePageData = {
         technologies: ['Photography', 'Photoshop', 'Color Correction', 'File Prep'],
         mediaLabel: 'Product photography workflow screenshot',
         primaryAction: {
-          label: 'View Case Study →',
+          label: 'View Case Study',
           href: '#product-photography-workflow'
         }
       },
@@ -84,7 +90,7 @@ export const prepressPageData: RolePageData = {
         technologies: ['HTML', 'CSS', 'Adobe Creative Cloud', 'Product Content'],
         mediaLabel: 'Print and web production screenshot',
         primaryAction: {
-          label: 'View Case Study →',
+          label: 'View Case Study',
           href: '#print-and-web-production-support'
         }
       }

@@ -28,6 +28,7 @@ export default function PrepressPage() {
       data={prepressPageData}
       heroId='prepress-hero'
       contentId='prepress-content'
+      showHeroSecondaryAction
     />
   )
 }

@@ -23,5 +23,12 @@ export const metadata: Metadata = {
 }
 
 export default function UXPage() {
-  return <RoleLandingPage data={uxPageData} heroId='ux-hero' contentId='ux-content' />
+  return (
+    <RoleLandingPage
+      data={uxPageData}
+      heroId='ux-hero'
+      contentId='ux-content'
+      showHeroSecondaryAction
+    />
+  )
 }

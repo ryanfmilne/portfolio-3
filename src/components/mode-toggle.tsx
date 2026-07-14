@@ -25,8 +25,8 @@ export function ModeToggle() {
     }
 
     return theme === 'dark'
-      ? <Moon className='h-[1.2rem] w-[1.2rem] stroke-[1.5]' />
-      : <Sun className='h-[1.2rem] w-[1.2rem] stroke-[1.5]' />
+      ? <Sun className='h-[1.2rem] w-[1.2rem] stroke-[1.5]' />
+      : <Moon className='h-[1.2rem] w-[1.2rem] stroke-[1.5]' />
   }
 
   const getThemeLabel = () => {

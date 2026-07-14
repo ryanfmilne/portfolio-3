@@ -72,7 +72,7 @@ export default function RootLayout({
       <body className='w-full overflow-x-clip'>
         <ThemeProvider
           attribute='class'
-          defaultTheme='system'
+          defaultTheme='dark'
           enableSystem
           disableTransitionOnChange
         >

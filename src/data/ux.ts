@@ -16,15 +16,23 @@ export const uxPageData: RolePageData = {
       download: true
     },
     secondaryAction: {
-      label: 'Contact Me',
-      href: '/contact'
+      label: 'View UX Work',
+      href: '#featured-projects'
     },
-    tertiaryAction: {
-      label: 'View GitHub',
-      href: 'https://github.com/ryanfmilne',
-      external: true
-    },
-    technologies: ['Figma', 'Responsive Design', 'Wireframes', 'Prototyping', 'UX Writing', 'Design Systems']
+    technologies: [
+      'Figma',
+      'UI Design',
+      'Responsive Design',
+      'Wireframing',
+      'Prototyping',
+      'User Flows',
+      'Design Systems',
+      'Accessibility',
+      'Interaction Design',
+      'Information Architecture',
+      'Usability Testing',
+      'UX Writing'
+    ]
   },
   featuredProjects: {
     title: 'Featured Projects',
@@ -46,7 +54,7 @@ export const uxPageData: RolePageData = {
         technologies: ['Figma', 'Responsive Design', 'Wireframes', 'Prototyping'],
         mediaLabel: 'Contractor website UX screenshot',
         primaryAction: {
-          label: 'View Case Study →',
+          label: 'View Case Study',
           href: '#contractor-website-ux-system'
         }
       },
@@ -65,7 +73,7 @@ export const uxPageData: RolePageData = {
         technologies: ['Figma', 'Shopify', 'Responsive Design', 'HTML'],
         mediaLabel: 'E-commerce UX screenshot',
         primaryAction: {
-          label: 'View Case Study →',
+          label: 'View Case Study',
           href: '#ecommerce-product-experience'
         }
       },
@@ -84,7 +92,7 @@ export const uxPageData: RolePageData = {
         technologies: ['Figma', 'User Flows', 'Wireframes', 'React'],
         mediaLabel: 'Internal tool UX screenshot',
         primaryAction: {
-          label: 'View Case Study →',
+          label: 'View Case Study',
           href: '#internal-tool-interface-concepts'
         }
       }

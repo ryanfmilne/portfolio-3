@@ -9,19 +9,12 @@ export function Hero({ variant = 'default' }: { variant?: 'default' | 'dark' }) 
   return (
     <>
       <div className='flex flex-row'>
-        <a
-          href='https://github.com/ryanfmilne'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='rounded-full'
-        >
-          <Avatar className={clsx('size-28 border shadow', isDark && 'border-neutral-700')}>
-            <AvatarImage alt={avatar.name} src={'/assets/avatar.webp'} />
-            <AvatarFallback className={clsx('font-mono font-bold', isDark && 'bg-neutral-900 text-neutral-100')}>
-              {avatar.initials}
-            </AvatarFallback>
-          </Avatar>
-        </a>
+        <Avatar className={clsx('size-28 border shadow', isDark && 'border-neutral-300 dark:border-neutral-700')}>
+          <AvatarImage alt={avatar.name} src={'/assets/avatar.webp'} />
+          <AvatarFallback className={clsx('font-mono font-bold', isDark && 'bg-neutral-100 text-neutral-950 dark:bg-neutral-900 dark:text-neutral-100')}>
+            {avatar.initials}
+          </AvatarFallback>
+        </Avatar>
       </div>
 
       <div className='flex items-center flex-row gap-4'>
@@ -29,7 +22,7 @@ export function Hero({ variant = 'default' }: { variant?: 'default' | 'dark' }) 
           <h1
             className={clsx(
               'flex text-4xl font-bold text-balance md:text-5xl',
-              isDark ? 'text-neutral-50' : 'text-neutral-900 dark:text-neutral-100'
+              isDark ? 'text-neutral-950 dark:text-neutral-50' : 'text-neutral-900 dark:text-neutral-100'
             )}
           >
             {avatar.name}
@@ -37,7 +30,7 @@ export function Hero({ variant = 'default' }: { variant?: 'default' | 'dark' }) 
           <p
             className={clsx(
               'font-mono text-sm font-medium uppercase tracking-wide',
-              isDark ? 'text-neutral-400' : 'text-neutral-500 dark:text-neutral-400'
+              isDark ? 'text-neutral-500 dark:text-neutral-400' : 'text-neutral-500 dark:text-neutral-400'
             )}
           >
             Developer • UX/UI • Prepress
@@ -48,7 +41,7 @@ export function Hero({ variant = 'default' }: { variant?: 'default' | 'dark' }) 
       <div
         className={clsx(
           'flex max-w-3xl flex-col gap-4 font-mono leading-relaxed text-pretty',
-          isDark ? 'text-neutral-300' : 'text-neutral-800 dark:text-neutral-200'
+          isDark ? 'text-neutral-700 dark:text-neutral-300' : 'text-neutral-800 dark:text-neutral-200'
         )}
       >
         <p>
