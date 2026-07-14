@@ -8,19 +8,24 @@ export const data = {
 
 export const navItems = [
   {
-    title: 'About',
-    label: 'about',
+    title: 'Home',
+    label: 'home',
     url: '/'
   },
   {
-    title: 'Career',
-    label: 'career',
-    url: '/career'
+    title: 'Dev',
+    label: 'dev',
+    url: '/dev'
   },
   {
-    title: 'Projects',
-    label: 'projects',
-    url: '/projects'
+    title: 'UX',
+    label: 'ux',
+    url: '/ux'
+  },
+  {
+    title: 'Prepress',
+    label: 'prepress',
+    url: '/prepress'
   },
   {
     title: 'Contact',

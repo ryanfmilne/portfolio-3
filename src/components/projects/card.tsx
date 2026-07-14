@@ -32,7 +32,7 @@ export function ProjectCard({ projects }: { projects: ProjectProps[] }) {
                       <ArrowUpRightIcon className='size-4 text-neutral-500 dark:group-hover:text-neutral-100 group-hover:text-neutral-900' />
                     </a>
                   ) : (
-                    link.github && (
+                    link.github ? (
                       <a
                         href={link.github}
                         target='_blank'
@@ -42,6 +42,8 @@ export function ProjectCard({ projects }: { projects: ProjectProps[] }) {
                         <h3>{title}</h3>
                         <ArrowUpRightIcon className='size-4 text-neutral-500 dark:group-hover:text-neutral-100 group-hover:text-neutral-900' />
                       </a>
+                    ) : (
+                      <h3>{title}</h3>
                     )
                   )}
                 </TooltipTrigger>

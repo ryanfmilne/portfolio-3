@@ -1,11 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
-import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
-import { Button } from '../ui/button'
-import { BadgeCheckIcon } from 'lucide-react'
 import { data } from '@/constants'
 
 export function Hero() {
-  const { avatar, links } = data
+  const { avatar } = data
 
   return (
     <>
@@ -26,77 +23,22 @@ export function Hero() {
       </div>
 
       <div className='flex items-center flex-row gap-4'>
-        <h1 className='flex dark:text-neutral-100 text-neutral-900 text-4xl font-bold text-balance'>
-          {avatar.name}
-        </h1>
-        <Button
-          variant='default'
-          size={null}
-          className='font-mono font-bold text-xs px-2 py-1 rounded-full hover:scale-105 transition-all ease-in-out duration-300'
-          asChild
-        >
-          <a
-            href='https://www.linkedin.com/in/ryanfmilne/'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='hidden md:flex'
-          >
-            Available
-          </a>
-        </Button>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <a
-              href='https://www.linkedin.com/in/ryanfmilne/'
-              target='_blank'
-              rel='noopener noreferrer'
-              aria-label="Available"
-              className='md:hidden flex rounded-full hover:scale-105 transition-all ease-in-out duration-300'
-            >
-              <BadgeCheckIcon className='size-6 dark:fill-blue-400 fill-blue-300 stroke-[1.5]' />
-            </a>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>Available</p>
-          </TooltipContent>
-        </Tooltip>
+        <div className='flex flex-col gap-1'>
+          <h1 className='flex dark:text-neutral-100 text-neutral-900 text-4xl font-bold text-balance'>
+            {avatar.name}
+          </h1>
+          <p className='font-mono text-sm font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400'>
+            Developer • UX/UI • Prepress
+          </p>
+        </div>
       </div>
 
       <div className='flex flex-col font-mono gap-4 dark:text-neutral-200 text-neutral-800 text-pretty'>
-        <h2>Full-stack web developer with 14+ years of e-commerce and web development experience. I specialize in building scalable e-commerce platforms and modern web applications.</h2>
-        <h3>From founding and scaling an 11-year e-commerce business to developing custom Shopify solutions, I bring a unique combination of technical expertise and business understanding. Recently transitioned to modern JavaScript frameworks - React, Next.js, and TypeScript - where I&apos;ve built a multi-tenant SaaS platform and continue to focus on exceptional user experiences.</h3>
+        <p>
+          I&apos;m a web developer with a background that spans software development, UX, commercial print, and e-commerce. Over the past two decades I&apos;ve built websites, online stores, internal business tools, and most recently modern SaaS applications using React, Next.js, and TypeScript. My experience combines technical development with real-world business operations, giving me a practical approach to building products that are both useful and maintainable.
+        </p>
       </div>
 
-      <nav className='flex gap-x-4 pt-4'>
-        {links.map((link) => (
-          <Tooltip key={link.title}>
-            <TooltipTrigger asChild>
-              <Button
-                variant='outline'
-                size={null}
-                key={link.title}
-                className='p-2 shadow rounded-lg'
-                asChild
-              >
-                <a
-                  key={link.title}
-                  href={link.url}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  aria-label={link.title}
-                  className='flex justify-center items-center md:gap-2'
-                >
-                  <link.icon className='size-6 stroke-[1.5]' />
-                  <p className='hidden md:block'>{link.title}</p>
-                </a>
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side='bottom' className='md:hidden'>
-              <p>{link.title}</p>
-            </TooltipContent>
-          </Tooltip>
-        ))}
-      </nav>
     </>
   )
 }

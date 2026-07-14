@@ -10,6 +10,8 @@ export function ModeToggle() {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    // Required by next-themes to avoid rendering theme-dependent UI before hydration.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true)
   }, [])
 

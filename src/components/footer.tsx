@@ -1,4 +1,4 @@
-import { Link } from 'next-view-transitions'
+import Link from 'next/link'
 import { data, navItems } from '@/constants'
 
 export function Footer() {
@@ -6,7 +6,7 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='footer flex justify-center items-center w-full mx-auto md:max-w-3xl'>
+    <footer className='footer flex justify-center items-center w-full mx-auto md:max-w-5xl px-4 md:px-6'>
       <div className='w-full mx-auto md:flex md:items-center md:justify-between text-sm font-medium text-neutral-700 dark:text-neutral-300'>
         <p>
           © {year}
@@ -21,7 +21,7 @@ export function Footer() {
           </a>
           <span className='ms-2 me-2'>—</span>
           <a
-            href='/api/cv2'
+            href='/api/cv_dev'
             className='hover:underline hover:underline-offset-4 cursor-pointer'
           >
             All rights reserved.

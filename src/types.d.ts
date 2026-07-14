@@ -51,6 +51,93 @@ export interface ProjectProps {
   video?: string
 }
 
+export interface TrackProfile {
+  slug: 'dev' | 'ux' | 'prepress'
+  title: string
+  label: string
+  summary: string
+  resumeUrl: string
+  projects: ProjectProps[]
+}
+
+export interface RoleAction {
+  label: string
+  href: string
+  external?: boolean
+  download?: boolean
+}
+
+export interface RoleHeroProps {
+  eyebrow: string
+  title: string
+  summary: string
+  description: string
+  primaryAction: RoleAction
+  secondaryAction: RoleAction
+  tertiaryAction?: RoleAction
+  technologies: string[]
+}
+
+export interface FeaturedRoleProject {
+  id: string
+  title: string
+  label: string
+  overview: string
+  role: string
+  contributions: string[]
+  technologies: string[]
+  mediaLabel: string
+  mediaAlt?: string
+  image?: string
+  primaryAction: RoleAction
+}
+
+export interface RoleListSection {
+  title: string
+  items: string[]
+}
+
+export interface RoleProcessStep {
+  title: string
+  description: string
+}
+
+export interface RoleBackgroundEntry {
+  title: string
+  role: string
+  date: string
+  summary: string
+}
+
+export interface RoleCtaProps {
+  title: string
+  body: string
+  primaryAction: RoleAction
+  secondaryAction: RoleAction
+  note?: string
+}
+
+export interface RolePageData {
+  hero: RoleHeroProps
+  featuredProjects: {
+    title: string
+    description: string
+    items: FeaturedRoleProject[]
+  }
+  capabilities: RoleListSection[]
+  skills: RoleListSection[]
+  process: RoleProcessStep[]
+  background: {
+    title: string
+    description: string
+    entries: RoleBackgroundEntry[]
+    action: RoleAction
+  }
+  cta: RoleCtaProps
+}
+
+export type DeveloperPageData = RolePageData
+
 export interface TranslationTag {
   name: string
   icon: string

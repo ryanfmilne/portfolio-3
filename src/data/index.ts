@@ -23,7 +23,7 @@ import { VercelIcon } from '@/components/icons/tags/vercel'
 import { BasehubIcon } from '@/components/icons/tags/basehub'
 import { GraphQLIcon } from '@/components/icons/tags/graphql'
 import { FileTextIcon, MailIcon } from 'lucide-react'
-import type { IconComponent, ProjectProps } from '@/types'
+import type { IconComponent, ProjectProps, TrackProfile } from '@/types'
 
 export const AVATAR = {
   name: 'Ryan Milne',
@@ -114,5 +114,62 @@ export const PROJECTS: ProjectProps[] = [
       github: '#',
       preview: 'https://goldenwestdigital.com/'
     }
+  }
+]
+
+export const UX_PROJECTS: ProjectProps[] = [
+  {
+    title: 'UX Case Study Placeholder',
+    description: 'Placeholder for UX process work, including research, user flows, wireframes, prototypes, and usability findings.',
+    tags: [
+      { name: 'Figma', icon: CSSIcon },
+      { name: 'Responsive Design', icon: TailwindCSSIcon },
+      { name: 'React', icon: ReactIcon }
+    ],
+    link: {
+      preview: '/contact'
+    }
+  }
+]
+
+export const PREPRESS_PROJECTS: ProjectProps[] = [
+  {
+    title: 'Prepress Production Placeholder',
+    description: 'Placeholder for catalog, print production, photography, and structured product data work.',
+    tags: [
+      { name: 'HTML', icon: HTMLIcon },
+      { name: 'CSS', icon: CSSIcon },
+      { name: 'JavaScript', icon: JavaScriptIcon }
+    ],
+    link: {
+      preview: '/contact'
+    }
+  }
+]
+
+export const TRACKS: TrackProfile[] = [
+  {
+    slug: 'dev',
+    title: 'Developer',
+    label: 'Developer resume and projects',
+    summary: 'Full-stack developer focused on production Next.js, React, TypeScript, Supabase, Shopify, and e-commerce systems.',
+    resumeUrl: '/api/cv_dev',
+    projects: PROJECTS
+  },
+  {
+    slug: 'ux',
+    title: 'UX',
+    label: 'UX resume and projects',
+    summary: 'UX-focused portfolio track for research, interaction design, Figma workflows, responsive interfaces, and customer experience improvements.',
+    resumeUrl: '/api/cv_ux',
+    projects: UX_PROJECTS
+  },
+  {
+    slug: 'prepress',
+    title: 'Prepress',
+    label: 'Prepress resume and projects',
+    summary: 'Prepress and production track for catalog systems, print-ready workflows, product photography, structured content, and production design.',
+    resumeUrl: '/api/cv_prepress',
+    projects: PREPRESS_PROJECTS
   }
 ]

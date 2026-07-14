@@ -1,12 +1,5 @@
-import { Section } from '@/components/ui/section'
-import { Hero } from '@/components/hero'
+import { AboutPageContent } from '@/components/about-page'
 
 export default function Home() {
-  return (
-    <div className='flex flex-col flex-1 md:mt-0 -mt-6'>
-      <Section id='about' className='pb-24'>
-        <Hero />
-      </Section>
-    </div>
-  )
+  return <AboutPageContent />
 }

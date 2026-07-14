@@ -1,7 +1,7 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import { Link } from 'next-view-transitions'
+import Link from 'next/link'
 import { ModeToggle } from './mode-toggle'
 import { Button } from './ui/button'
 import { navItems } from '@/constants'
@@ -11,9 +11,9 @@ export function Header() {
   const pathname = usePathname()
 
   return (
-    <header className='fixed top-0 z-10 flex items-center justify-center w-full mx-auto bg-white dark:bg-black border-b py-2'>
-      <div className='flex items-center justify-between w-full md:max-w-3xl mx-4'>
-        <nav className='flex justify-center items-center'>
+    <header className='fixed top-0 z-50 flex items-center justify-center w-full mx-auto bg-white/95 dark:bg-black/95 border-b py-2 backdrop-blur'>
+      <div className='flex items-center justify-between gap-2 w-full md:max-w-5xl mx-4 md:mx-6'>
+        <nav className='flex min-w-0 items-center overflow-x-auto'>
           {navItems.map((link) => (
             <Button asChild variant='ghost' size={null} key={link.label}>
               <Link
@@ -21,7 +21,7 @@ export function Header() {
                 aria-label={link.label}
                 href={link.url}
                 className={clsx(
-                  'relative block me-2 py-2 md:px-4 px-2 font-semibold',
+                  'relative block me-1 rounded-md px-2 py-2 text-sm font-semibold md:me-2 md:px-3',
                   {
                     'bg-neutral-100 dark:bg-neutral-800': pathname === link.url,
                     'hover:bg-neutral-100 dark:hover:bg-neutral-800':
@@ -35,7 +35,9 @@ export function Header() {
           ))}
         </nav>
 
-        <ModeToggle />
+        <div className='shrink-0'>
+          <ModeToggle />
+        </div>
       </div>
     </header>
   )

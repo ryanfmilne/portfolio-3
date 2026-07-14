@@ -1,9 +1,7 @@
 import type React from 'react'
-import { type Metadata } from 'next'
-import { ViewTransitions } from 'next-view-transitions'
+import { type Metadata, type Viewport } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-import { Head } from '@/components/head'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
@@ -15,9 +13,44 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { cn } from '@/lib/utils'
 import './styles/globals.css'
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: 'Portfolio | Ryan Milne',
-  description: 'My personal portfolio: showcasing my work and skills.'
+  description: 'My personal portfolio: showcasing my work and skills.',
+  authors: [{ name: 'Ryan Milne' }],
+  robots: 'index, follow',
+  openGraph: {
+    title: 'Portfolio | Ryan Milne',
+    description: 'My personal portfolio: showcasing my work and skills.',
+    url: 'https://ryanmilne.com',
+    images: [
+      {
+        url: 'https://ryanmilne.com/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Ryan Milne',
+        type: 'image/png'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    creator: '@ryanmilne',
+    title: 'Portfolio | Ryan Milne',
+    description: 'My personal portfolio: showcasing my work and skills.',
+    images: ['https://ryanmilne.com/opengraph-image.png']
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/favicon-96x96.png', type: 'image/png', sizes: '96x96' }
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }]
+  },
+  manifest: '/site.webmanifest'
+}
+
+export const viewport: Viewport = {
+  themeColor: '#000000'
 }
 
 export default function RootLayout({
@@ -30,34 +63,31 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        'min-h-screen bg-background font-sans antialiased overflow-y-scroll',
+        'min-h-screen bg-background font-sans antialiased overflow-x-clip overflow-y-scroll',
         GeistSans.variable,
         GeistMono.variable
       )}
       suppressHydrationWarning
     >
-      <Head metadata={metadata} />
-      <body className='w-full'>
-        <ViewTransitions>
-            <ThemeProvider
-              attribute='class'
-              defaultTheme='system'
-              enableSystem
-              disableTransitionOnChange
-            >
-              <TooltipProvider>
-                <main className='flex flex-col items-center justify-center min-h-screen pt-24 pb-8 px-4'>
-                  <Header />
-                  {children}
-                  <Footer />
-                </main>
-              </TooltipProvider>
-              <Toaster />
-              <ToasterProvider />
-            </ThemeProvider>
-            <Analytics />
-            <SpeedInsights />
-        </ViewTransitions>
+      <body className='w-full overflow-x-clip'>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <TooltipProvider>
+            <main className='flex flex-col items-center justify-center min-h-screen pt-24 pb-8'>
+              <Header />
+              {children}
+              <Footer />
+            </main>
+          </TooltipProvider>
+          <Toaster />
+          <ToasterProvider />
+        </ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

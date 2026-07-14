@@ -5,19 +5,21 @@ import { type ContactEmailTemplateProps } from '@/types'
 
 export const dynamic = 'force-dynamic'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request: Request) {
   try {
     const { firstName, lastName, email, message } =
       (await request.json()) as ContactEmailTemplateProps
 
-    if (!process.env.RESEND_API_KEY) {
+    const resendApiKey = process.env.RESEND_API_KEY
+
+    if (!resendApiKey) {
       return NextResponse.json(
         { message: 'Email service not configured' },
         { status: 500 }
       )
     }
+
+    const resend = new Resend(resendApiKey)
 
     const { data, error } = await resend.emails.send({
       from: 'Ryan Milne <noreply@trypaperboy.com>',
