@@ -15,16 +15,18 @@ export function Header() {
       <div className='flex items-center justify-between gap-2 w-full md:max-w-5xl mx-4 md:mx-6'>
         <nav className='flex min-w-0 items-center overflow-x-auto'>
           {navItems.map((link) => (
-            <Button asChild variant='ghost' size={null} key={link.label}>
+            <Button asChild variant={null} size={null} key={link.label}>
               <Link
                 key={link.label}
                 aria-label={link.label}
+                aria-current={pathname === link.url ? 'page' : undefined}
                 href={link.url}
                 className={clsx(
-                  'relative block me-1 rounded-md px-2 py-2 text-sm font-semibold md:me-2 md:px-3',
+                  'relative block me-1 rounded-md px-2 py-2 text-sm font-semibold transition-colors md:me-2 md:px-3',
                   {
-                    'bg-neutral-100 dark:bg-neutral-800': pathname === link.url,
-                    'hover:bg-neutral-100 dark:hover:bg-neutral-800':
+                    'bg-neutral-200 text-neutral-950 dark:bg-neutral-800 dark:text-neutral-100':
+                      pathname === link.url,
+                    'text-neutral-700 hover:bg-neutral-200 hover:text-neutral-950 dark:text-neutral-300 dark:hover:bg-neutral-800 dark:hover:text-neutral-100':
                       pathname !== link.url
                   }
                 )}

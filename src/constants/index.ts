@@ -8,7 +8,7 @@ export const data = {
 
 export const navItems = [
   {
-    title: 'Home',
+    title: 'Ryan F. Milne',
     label: 'home',
     url: '/'
   },

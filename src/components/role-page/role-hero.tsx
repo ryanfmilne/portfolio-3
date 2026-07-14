@@ -16,7 +16,7 @@ export function RoleHero({
 
   return (
     <Card className={isDark ? 'border-0 bg-transparent text-white shadow-none' : 'border shadow'}>
-      <CardContent className='flex flex-col gap-y-6 p-5 md:p-6'>
+      <CardContent className={isDark ? 'flex flex-col gap-y-6 p-0' : 'flex flex-col gap-y-6 p-5 md:p-6'}>
         <div className='flex flex-col gap-y-3'>
           <p className={isDark
             ? 'font-mono text-sm font-medium uppercase tracking-wide text-neutral-400'

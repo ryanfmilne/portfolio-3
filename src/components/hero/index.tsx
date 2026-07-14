@@ -1,8 +1,10 @@
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
 import { data } from '@/constants'
+import clsx from 'clsx'
 
-export function Hero() {
+export function Hero({ variant = 'default' }: { variant?: 'default' | 'dark' }) {
   const { avatar } = data
+  const isDark = variant === 'dark'
 
   return (
     <>
@@ -13,9 +15,9 @@ export function Hero() {
           rel='noopener noreferrer'
           className='rounded-full'
         >
-          <Avatar className='size-28 shadow border'>
+          <Avatar className={clsx('size-28 border shadow', isDark && 'border-neutral-700')}>
             <AvatarImage alt={avatar.name} src={'/assets/avatar.webp'} />
-            <AvatarFallback className='font-mono font-bold'>
+            <AvatarFallback className={clsx('font-mono font-bold', isDark && 'bg-neutral-900 text-neutral-100')}>
               {avatar.initials}
             </AvatarFallback>
           </Avatar>
@@ -24,21 +26,35 @@ export function Hero() {
 
       <div className='flex items-center flex-row gap-4'>
         <div className='flex flex-col gap-1'>
-          <h1 className='flex dark:text-neutral-100 text-neutral-900 text-4xl font-bold text-balance'>
+          <h1
+            className={clsx(
+              'flex text-4xl font-bold text-balance md:text-5xl',
+              isDark ? 'text-neutral-50' : 'text-neutral-900 dark:text-neutral-100'
+            )}
+          >
             {avatar.name}
           </h1>
-          <p className='font-mono text-sm font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400'>
+          <p
+            className={clsx(
+              'font-mono text-sm font-medium uppercase tracking-wide',
+              isDark ? 'text-neutral-400' : 'text-neutral-500 dark:text-neutral-400'
+            )}
+          >
             Developer • UX/UI • Prepress
           </p>
         </div>
       </div>
 
-      <div className='flex flex-col font-mono gap-4 dark:text-neutral-200 text-neutral-800 text-pretty'>
+      <div
+        className={clsx(
+          'flex max-w-3xl flex-col gap-4 font-mono leading-relaxed text-pretty',
+          isDark ? 'text-neutral-300' : 'text-neutral-800 dark:text-neutral-200'
+        )}
+      >
         <p>
-          I&apos;m a web developer with a background that spans software development, UX, commercial print, and e-commerce. Over the past two decades I&apos;ve built websites, online stores, internal business tools, and most recently modern SaaS applications using React, Next.js, and TypeScript. My experience combines technical development with real-world business operations, giving me a practical approach to building products that are both useful and maintainable.
+          My background spans web development, UX, commercial print, and e-commerce. After building and running an e-commerce business for over a decade, I now create SaaS platforms, Shopify storefronts, and digital experiences that combine technical expertise with practical business insight.
         </p>
       </div>
-
     </>
   )
 }
