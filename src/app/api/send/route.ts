@@ -22,7 +22,7 @@ export async function POST(request: Request) {
     const resend = new Resend(resendApiKey)
 
     const { data, error } = await resend.emails.send({
-      from: 'Ryan F. Milne <contact@goldenwestdigital.com>',
+      from: 'Ryan F. Milne <portfolio@goldenwestdigital.com>',
       to: 'ryanfmilne@gmail.com',
       reply_to: email,
       subject: 'Message from contact form',
