@@ -11,12 +11,14 @@ export function RoleLandingPage({
   data,
   heroId,
   contentId,
-  showHeroSecondaryAction = false
+  showHeroSecondaryAction = false,
+  showFeaturedProjects = true
 }: {
   data: RolePageData
   heroId: string
   contentId: string
   showHeroSecondaryAction?: boolean
+  showFeaturedProjects?: boolean
 }) {
   return (
     <div className='flex w-full flex-col flex-1 items-center'>
@@ -35,18 +37,20 @@ export function RoleLandingPage({
       </section>
 
       <Section id={contentId} className='gap-y-14 pb-24 pt-14'>
-        <section aria-labelledby='featured-projects' className='flex flex-col gap-y-4'>
-          <SectionHeading
-            id='featured-projects'
-            title={data.featuredProjects.title}
-            description={data.featuredProjects.description}
-          />
-          <div className='flex flex-col gap-5'>
-            {data.featuredProjects.items.map((project, index) => (
-              <FeaturedProjectCard key={project.id} project={project} index={index} />
-            ))}
-          </div>
-        </section>
+        {showFeaturedProjects && (
+          <section aria-labelledby='featured-projects' className='flex flex-col gap-y-4'>
+            <SectionHeading
+              id='featured-projects'
+              title={data.featuredProjects.title}
+              description={data.featuredProjects.description}
+            />
+            <div className='flex flex-col gap-5'>
+              {data.featuredProjects.items.map((project, index) => (
+                <FeaturedProjectCard key={project.id} project={project} index={index} />
+              ))}
+            </div>
+          </section>
+        )}
 
         <section aria-labelledby='technical-skills' className='flex flex-col gap-y-4'>
           <SectionHeading id='technical-skills' title='Technical Skills' />

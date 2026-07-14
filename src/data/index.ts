@@ -167,7 +167,7 @@ export const TRACKS: TrackProfile[] = [
   {
     slug: 'prepress',
     title: 'Prepress',
-    label: 'Prepress resume and projects',
+    label: 'Prepress resume and background',
     summary: 'Prepress and production track for catalog systems, print-ready workflows, product photography, structured content, and production design.',
     resumeUrl: '/api/cv_prepress',
     projects: PREPRESS_PROJECTS

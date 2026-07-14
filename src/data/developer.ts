@@ -54,56 +54,56 @@ export const developerPageData: RolePageData = {
         title: 'Golden West Digital',
         label: 'SaaS • In Development',
         overview:
-          'A contractor-focused platform for building client websites, managing leads, and tracking QR campaigns.',
+          'A contractor-focused SaaS platform for creating client websites, managing leads, tracking QR campaigns, and supporting ongoing digital services.',
         role: 'Founder • Product Designer • Developer',
         contributions: [
-          'Built a multi-tenant website builder',
-          'Developed lead management and QR tracking',
-          'Integrated authentication, billing, and custom domains'
+          'Designed contractor-focused website and lead workflows',
+          'Built QR campaign tracking and client site management',
+          'Developed ongoing digital service support features'
         ],
         technologies: ['Next.js', 'React', 'TypeScript', 'Supabase'],
-        mediaLabel: 'Golden West Digital product screenshot',
+        mediaLabel: 'Golden West Digital platform screenshot',
         primaryAction: {
           label: 'View Case Study',
-          href: '#golden-west-digital'
+          href: '/dev/projects/golden-west-digital'
         }
       },
       {
-        id: 'print-management-platform',
-        title: 'Print Management Platform',
-        label: 'Internal Tools • Private Project',
+        id: 'timely-envelopes',
+        title: 'Timely Envelopes',
+        label: 'Print Operations • Private Prototype',
         overview:
-          'A private operations platform for customer ordering, account management, and production workflow.',
+          'A custom print-management platform designed to bring customer accounts, ordering, production tracking, and internal workflows into one responsive application.',
         role: 'Product Designer • Full-Stack Developer',
         contributions: [
-          'Designed customer onboarding workflows',
-          'Built account and order management views',
-          'Created production workflow concepts'
+          'Designed customer account and ordering workflows',
+          'Built responsive production tracking concepts',
+          'Organized internal print operations into one application'
         ],
-        technologies: ['Next.js', 'React', 'TypeScript', 'Supabase'],
-        mediaLabel: 'Print management dashboard screenshot',
+        technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+        mediaLabel: 'Timely Envelopes workflow dashboard screenshot',
         primaryAction: {
           label: 'View Case Study',
-          href: '/dev/projects/print-management-platform'
+          href: '/dev/projects/timely-envelopes'
         }
       },
       {
-        id: 'ecommerce-storefronts',
-        title: 'E-commerce Storefront Development',
-        label: 'Shopify • Production Work',
+        id: 'landscaping-contractor-demo',
+        title: 'Landscaping Contractor Demo',
+        label: 'Lead Generation Website • Live Demo',
         overview:
-          'Production storefront work focused on Shopify customization, product experiences, and customer flows.',
-        role: 'Web Developer',
+          'A conversion-focused landscaping website designed to help a local contractor present services, build credibility, showcase completed work, and generate quote requests through a clear mobile-first experience.',
+        role: 'Designer • Front-End Developer',
         contributions: [
-          'Customized Shopify and Liquid themes',
-          'Built product-selection experiences',
-          'Supported B2B customer-account flows'
+          'Designed a mobile-first lead generation flow',
+          'Created prominent quote-request calls to action',
+          'Structured reviews, services, galleries, and before-and-after work'
         ],
-        technologies: ['Next.js', 'React', 'TypeScript', 'Supabase'],
-        mediaLabel: 'E-commerce storefront screenshot',
+        technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+        mediaLabel: 'Landscaping contractor lead-generation website screenshot',
         primaryAction: {
           label: 'View Case Study',
-          href: '/'
+          href: '/dev/projects/landscaping-contractor-demo'
         }
       }
     ]

@@ -40,60 +40,60 @@ export const uxPageData: RolePageData = {
       'Selected work from interface design, product workflows, and commercial e-commerce experiences.',
     items: [
       {
-        id: 'contractor-website-ux-system',
-        title: 'Contractor Website UX System',
-        label: 'UX • Website Systems',
+        id: 'golden-west-digital',
+        title: 'Golden West Digital',
+        label: 'SaaS UX • In Development',
         overview:
-          'A UX direction for contractor-focused websites built around clear service paths, lead capture, and reusable page patterns.',
+          'A contractor-focused SaaS platform designed around clear onboarding, reusable interface patterns, lead-management workflows, and practical dashboard experiences.',
+        role: 'Product Designer • UX/UI Designer • Developer',
+        contributions: [
+          'Structured dashboard navigation and onboarding flows',
+          'Designed lead-management workflow patterns',
+          'Translated product requirements into production UI'
+        ],
+        technologies: ['Figma', 'User Flows', 'Design Systems', 'Responsive Design'],
+        mediaLabel: 'Golden West Digital dashboard and onboarding UX screenshot',
+        primaryAction: {
+          label: 'View Case Study',
+          href: '/ux/projects/golden-west-digital'
+        }
+      },
+      {
+        id: 'timely-envelopes',
+        title: 'Timely Envelopes',
+        label: 'Workflow UX • Private Prototype',
+        overview:
+          'A print-management application designed to simplify customer approvals, account management, ordering, production status, and staff workflows across multiple user roles.',
         role: 'Product Designer • UX Designer',
         contributions: [
-          'Mapped reusable service-page patterns',
-          'Organized lead-focused page flows',
-          'Designed responsive content structures'
+          'Mapped customer onboarding and approval flows',
+          'Organized account and order management screens',
+          'Designed role-based production status visibility'
         ],
-        technologies: ['Figma', 'Responsive Design', 'Wireframes', 'Prototyping'],
-        mediaLabel: 'Contractor website UX screenshot',
+        technologies: ['Figma', 'User Flows', 'Wireframing', 'Information Architecture'],
+        mediaLabel: 'Timely Envelopes workflow and production interface screenshot',
         primaryAction: {
           label: 'View Case Study',
-          href: '#contractor-website-ux-system'
+          href: '/ux/projects/timely-envelopes'
         }
       },
       {
-        id: 'ecommerce-product-experience',
-        title: 'E-commerce Product Experience',
-        label: 'E-commerce • UX',
+        id: 'landscaping-contractor-demo',
+        title: 'Landscaping Contractor Demo',
+        label: 'Lead Generation UX • Live Demo',
         overview:
-          'Storefront UX work focused on product selection, responsive layouts, and clearer purchasing paths.',
-        role: 'UX Designer • Web Developer',
+          'A conversion-focused contractor website designed around clear service discovery, mobile navigation, trust signals, and a simple path to requesting a quote.',
+        role: 'UX/UI Designer • Front-End Developer',
         contributions: [
-          'Improved product-selection flows',
-          'Structured responsive storefront layouts',
-          'Supported customer account experiences'
+          'Planned conversion-focused information architecture',
+          'Designed mobile-first navigation and quote-request flows',
+          'Structured reviews, galleries, services, and trust content'
         ],
-        technologies: ['Figma', 'Shopify', 'Responsive Design', 'HTML'],
-        mediaLabel: 'E-commerce UX screenshot',
+        technologies: ['Figma', 'Responsive Design', 'Information Architecture', 'Accessibility'],
+        mediaLabel: 'Landscaping contractor website UX screenshot',
         primaryAction: {
           label: 'View Case Study',
-          href: '#ecommerce-product-experience'
-        }
-      },
-      {
-        id: 'internal-tool-interface-concepts',
-        title: 'Internal Tool Interface Concepts',
-        label: 'Internal Tools • Workflow Design',
-        overview:
-          'Workflow concepts for account, approval, and production views in a responsive web application.',
-        role: 'Product Designer • Interface Designer',
-        contributions: [
-          'Defined approval workflow screens',
-          'Planned dashboard information hierarchy',
-          'Designed mobile-friendly tool views'
-        ],
-        technologies: ['Figma', 'User Flows', 'Wireframes', 'React'],
-        mediaLabel: 'Internal tool UX screenshot',
-        primaryAction: {
-          label: 'View Case Study',
-          href: '#internal-tool-interface-concepts'
+          href: '/ux/projects/landscaping-contractor-demo'
         }
       }
     ]
