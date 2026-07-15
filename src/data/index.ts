@@ -21,7 +21,6 @@ import { ReduxIcon } from '@/components/icons/tags/redux'
 import { PNPMIcon } from '@/components/icons/tags/pnpm'
 import { VercelIcon } from '@/components/icons/tags/vercel'
 import { BasehubIcon } from '@/components/icons/tags/basehub'
-import { GraphQLIcon } from '@/components/icons/tags/graphql'
 import { FileTextIcon, MailIcon } from 'lucide-react'
 import type { IconComponent, ProjectProps, TrackProfile } from '@/types'
 
@@ -74,14 +73,13 @@ export const iconMap: Record<string, IconComponent> = {
   ReduxIcon,
   PNPMIcon,
   VercelIcon,
-  BasehubIcon,
-  GraphQLIcon
+  BasehubIcon
 }
 
 export const SKILLS = {
   languages: ['TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'SQL'],
   frontend: ['React', 'Next.js', 'Tailwind CSS', 'Redux', 'Shadcn/ui', 'Responsive Design'],
-  backend: ['Node.js', 'Express', 'REST APIs', 'GraphQL'],
+  backend: ['Node.js', 'Express', 'REST APIs', 'Authentication'],
   databases: ['PostgreSQL', 'MySQL', 'Supabase', 'MongoDB'],
   platforms: ['Shopify', 'Magento', 'WordPress', 'Vercel', 'Netlify'],
   tools: ['Git', 'GitHub', 'Figma', 'VS Code', 'Docker', 'Webpack', 'Vite'],
@@ -94,15 +92,15 @@ export const EDUCATION = {
   school: 'Continuous Learning',
   year: '2010 - Present',
   additional: [
-    '14+ years of professional web development experience',
-    'Specialized in e-commerce and modern JavaScript frameworks'
+    'Over a decade of hands-on web and e-commerce experience',
+    'Focused on modern web applications, Shopify, and JavaScript frameworks'
   ]
 }
 
 export const PROJECTS: ProjectProps[] = [
   {
     title: 'Golden West Digital',
-    description: 'Digital agency with full-featured SaaS platform. Includes client portal with analytics dashboard, QR code print integration, block-based site builder, custom domain provisioning, and Stripe billing.',
+    description: 'Contractor-focused web platform for client websites, lead capture, QR campaign tracking, content management, custom domains, and Stripe billing.',
     tags: [
       { name: 'Next.js', icon: NextJSIcon },
       { name: 'TypeScript', icon: TypeScriptIcon },
@@ -152,7 +150,7 @@ export const TRACKS: TrackProfile[] = [
     slug: 'dev',
     title: 'Developer',
     label: 'Developer resume and projects',
-    summary: 'Full-stack developer focused on production Next.js, React, TypeScript, Supabase, Shopify, and e-commerce systems.',
+    summary: 'Web application developer focused on production Next.js, React, TypeScript, Supabase, Shopify, and e-commerce systems.',
     resumeUrl: '/api/cv_dev',
     projects: PROJECTS
   },

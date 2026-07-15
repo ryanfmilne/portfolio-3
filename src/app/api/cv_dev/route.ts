@@ -16,7 +16,7 @@ export async function GET() {
       status: 200,
       headers: {
         'Content-Type': 'application/pdf',
-        'Content-Disposition': 'attachment; filename="Ryan_Milne_Resume.pdf"',
+        'Content-Disposition': 'attachment; filename="ryanfmilne-dev.pdf"',
         'Content-Length': pdfBuffer.length.toString(),
       },
     })

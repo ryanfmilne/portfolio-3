@@ -2,7 +2,6 @@ import { Document, Page, StyleSheet } from '@react-pdf/renderer'
 import { CVHeader } from './header'
 import { CVSkills } from './skills'
 import { CVExperience } from './experience'
-import { CVCertifications } from './certifications'
 
 const styles = StyleSheet.create({
   page: {
@@ -24,7 +23,6 @@ export function CVDocument() {
         <CVHeader />
         <CVSkills />
         <CVExperience />
-        <CVCertifications />
       </Page>
     </Document>
   )

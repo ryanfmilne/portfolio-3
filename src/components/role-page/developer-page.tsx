@@ -7,6 +7,7 @@ export function DeveloperPage() {
       data={developerPageData}
       heroId='developer-hero'
       contentId='developer-content'
+      showHeroSecondaryAction
     />
   )
 }

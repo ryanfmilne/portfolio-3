@@ -1,13 +1,13 @@
 import type { RolePageData } from '@/types'
 
-const developerResumePath = '/resumes/ryan-milne-developer-resume.pdf'
+const developerResumePath = '/api/cv_dev'
 
 export const developerPageData: RolePageData = {
   hero: {
     eyebrow: 'Ryan Milne',
     title: 'Web Developer',
     summary:
-      'I build practical web applications, e-commerce experiences, and internal tools using modern JavaScript technologies.',
+      'I build practical web applications, e-commerce experiences, and internal tools using modern web technologies.',
     description:
       'My background combines web development, e-commerce operations, UX thinking, and hands-on business experience. I work primarily with Next.js, React, TypeScript, Shopify, Supabase, and modern front-end tooling to build maintainable interfaces, storefronts, and internal systems that support real business workflows.',
     primaryAction: {
@@ -16,13 +16,8 @@ export const developerPageData: RolePageData = {
       download: true
     },
     secondaryAction: {
-      label: 'Contact Me',
-      href: '/contact'
-    },
-    tertiaryAction: {
-      label: 'View GitHub',
-      href: 'https://github.com/ryanfmilne',
-      external: true
+      label: 'View Dev Work',
+      href: '#featured-projects'
     },
     technologies: [
       'HTML',
@@ -41,7 +36,7 @@ export const developerPageData: RolePageData = {
       'Git',
       'Vercel',
       'AI-Assisted Development',
-      'Prompt Engineering'
+      'AI-Assisted Workflow'
     ]
   },
   featuredProjects: {
@@ -74,7 +69,7 @@ export const developerPageData: RolePageData = {
         label: 'Print Operations • Private Prototype',
         overview:
           'A custom print-management platform designed to bring customer accounts, ordering, production tracking, and internal workflows into one responsive application.',
-        role: 'Product Designer • Full-Stack Developer',
+        role: 'Product Designer • Web Application Developer',
         contributions: [
           'Designed customer account and ordering workflows',
           'Built responsive production tracking concepts',

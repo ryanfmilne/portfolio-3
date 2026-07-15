@@ -52,15 +52,16 @@ const styles = StyleSheet.create({
 export function CVExperience() {
   const experiences = [
     {
-      title: 'Founder & Full-Stack Developer',
+      title: 'Founder & Web Application Developer',
       company: 'Golden West Digital',
       dates: 'July 2025 – Present',
-      description: 'Productized web agency for contractor businesses, powered by a custom multi-tenant platform.',
+      description: 'Contractor-focused digital agency supported by a custom multi-tenant website and lead-management platform.',
       bullets: [
-        '• Designed and built multi-tenant SaaS platform on Next.js, React, TypeScript, and Supabase with row-level security for tenant data isolation.',
-        '• Built block-based site builder enabling rapid templated site delivery, custom domain provisioning via Vercel API, and Stripe billing integration.',
-        '• Implemented authentication system with role-based access control and real-time data synchronization.',
-        '• Solo developer shipping production features end-to-end with AI-assisted development workflow.',
+        '• Built a contractor-focused web platform using Next.js, React, TypeScript, and Supabase.',
+        '• Developed reusable website templates and content management tools for faster client site delivery.',
+        '• Implemented authentication, account management, Stripe billing, and custom-domain support.',
+        '• Built lead capture, QR tracking, and client management features for contractor marketing workflows.',
+        '• Designed and shipped features from concept through deployment using a modern AI-assisted development process.',
       ],
     },
     {
@@ -68,10 +69,10 @@ export function CVExperience() {
       company: 'Catalina Home',
       dates: 'Oct 2023 – May 2025',
       bullets: [
-        '• Launched two production Shopify storefronts: Artistry Hardwood Flooring (artistryflooring.com) and Lone Mountain Lighting (lonemountainlighting.com), an outdoor lighting brand with a B2B Pro program for contractors.',
-        '• Customized Liquid themes and built product configurators for variant-heavy SKUs, improving customer conversion paths.',
-        '• Set up B2B/wholesale account flow on Lone Mountain with gated contractor pricing tiers.',
-        '• Designed user experiences in Figma and shipped responsive themes to production.',
+        '• Shipped production Shopify storefronts for Artistry Hardwood Flooring and Lone Mountain Lighting, including responsive UI improvements and launch support.',
+        '• Customized Liquid themes and built product configurators for variant-heavy SKUs, improving customer purchasing paths.',
+        '• Implemented B2B purchasing flows on Lone Mountain with gated contractor pricing tiers.',
+        '• Created Figma mockups, refined UX details, and shipped responsive storefront updates to production.',
       ],
     },
     {
@@ -79,8 +80,8 @@ export function CVExperience() {
       company: 'Pro Audio Land',
       dates: 'Jul 2022 – Oct 2023',
       bullets: [
-        '• Resolved technical debt in Magento 2 platform, optimizing database queries and fixing broken plugin integrations.',
-        '• Redesigned UI and restructured product catalog architecture, improving navigation and discoverability.',
+        '• Resolved Magento 2 platform issues, including slow pages, broken plugin integrations, and catalog usability problems.',
+        '• Redesigned customer-facing UI and improved product organization to support navigation and discoverability.',
         '• Designed email marketing campaigns and promotional materials.',
       ],
     },
@@ -89,14 +90,14 @@ export function CVExperience() {
       company: 'Fashion E-commerce Business',
       dates: 'Nov 2011 – Sep 2022',
       bullets: [
-        '• Founded and operated independent online retailer for 11 years across shoes, lingerie, accessories, and costumes.',
-        '• Built and maintained custom Magento platform managing 15,000+ SKUs with integrated payment, shipping, and inventory systems.',
-        '• Built and ran live inventory sync between Magento storefront and eBay account.',
-        '• Owned the full operational stack: development, design, SEO, paid advertising, photography, and customer experience.',
+        '• Founded and operated an independent online retailer for over a decade across shoes, lingerie, accessories, and costumes.',
+        '• Built and maintained a custom Magento storefront supporting 15,000+ SKUs.',
+        '• Managed payment, shipping, inventory, customer experience, SEO, photography, and day-to-day operations.',
+        '• Owned online merchandising, marketing, product data, and customer support from launch through daily operations.',
       ],
     },
     {
-      title: 'Marketing: Graphic Design & Product Photography',
+      title: 'Marketing, Graphic Design & Product Photography',
       company: 'ADL (now Luminance Lighting)',
       dates: 'Jan 2005 – Nov 2011',
       bullets: [

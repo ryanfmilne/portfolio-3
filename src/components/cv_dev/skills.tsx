@@ -42,27 +42,27 @@ export function CVSkills() {
       <View style={styles.skillsGrid}>
         <View style={styles.skillRow}>
           <Text style={styles.skillCategory}>Frontend</Text>
-          <Text style={styles.skillList}>React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, shadcn/ui</Text>
+          <Text style={styles.skillList}>Next.js, React, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, shadcn/ui</Text>
         </View>
         <View style={styles.skillRow}>
           <Text style={styles.skillCategory}>Backend</Text>
-          <Text style={styles.skillList}>Node.js, Supabase, PostgreSQL, REST APIs, GraphQL, authentication, row-level security</Text>
+          <Text style={styles.skillList}>Supabase, PostgreSQL, REST APIs, authentication</Text>
         </View>
         <View style={styles.skillRow}>
           <Text style={styles.skillCategory}>E-commerce</Text>
-          <Text style={styles.skillList}>Shopify, Liquid, Storefront API, Stripe, multi-tenant architecture, Magento, WooCommerce</Text>
+          <Text style={styles.skillList}>Shopify, Liquid, Magento, Stripe</Text>
         </View>
         <View style={styles.skillRow}>
           <Text style={styles.skillCategory}>Infrastructure</Text>
-          <Text style={styles.skillList}>Vercel, Git, CI/CD, Stripe, environment management</Text>
+          <Text style={styles.skillList}>Git, GitHub, Vercel, deployment workflows</Text>
         </View>
         <View style={styles.skillRow}>
           <Text style={styles.skillCategory}>Design</Text>
-          <Text style={styles.skillList}>Figma, UI/UX, responsive design, Adobe Creative Suite</Text>
+          <Text style={styles.skillList}>Figma, responsive design, UI/UX, Adobe Creative Suite</Text>
         </View>
         <View style={styles.skillRow}>
           <Text style={styles.skillCategory}>Tools</Text>
-          <Text style={styles.skillList}>VS Code, Claude Code, Codex CLI. Daily AI-assisted production workflow.</Text>
+          <Text style={styles.skillList}>VS Code, Claude Code, Codex, AI-assisted development</Text>
         </View>
       </View>
     </View>

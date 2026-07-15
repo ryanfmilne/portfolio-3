@@ -63,7 +63,7 @@ export async function GET() {
       status: 200,
       headers: {
         'Content-Type': 'application/pdf',
-        'Content-Disposition': 'attachment; filename="Ryan_Milne_Prepress_Resume.pdf"',
+        'Content-Disposition': 'attachment; filename="ryanfmilne-prepress.pdf"',
         'Content-Length': pdfBuffer.length.toString(),
       },
     })
