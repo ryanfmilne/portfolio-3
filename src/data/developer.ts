@@ -11,7 +11,7 @@ export const developerPageData: RolePageData = {
     description:
       'My background combines web development, e-commerce operations, UX thinking, and hands-on business experience. I work primarily with Next.js, React, TypeScript, Shopify, Supabase, and modern front-end tooling to build maintainable interfaces, storefronts, and internal systems that support real business workflows.',
     primaryAction: {
-      label: 'Download Developer Resume',
+      label: 'Download Dev Resume',
       href: developerResumePath,
       download: true
     },
@@ -213,7 +213,7 @@ export const developerPageData: RolePageData = {
     body:
       'I’m open to web development, front-end, e-commerce, Shopify, and product-focused roles.',
     primaryAction: {
-      label: 'Download Developer Resume',
+      label: 'Download Dev Resume',
       href: developerResumePath,
       download: true
     },
